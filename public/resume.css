@@ -1,0 +1,45 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    color:whitesmoke;
+    /* background-color: black; */
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    background-color: black;
+
+}
+hr{
+    /* height:0px;
+    color: black;
+    background-color:  black; */
+    border-top: 0px solid #F0EDCF;
+}
+
+
+li {
+    list-style: none;
+    display: flex;
+    
+}
+li > a  {
+    text-decoration: none;
+    color: #F0EDCF ;
+    font-size: 25px;
+}
+
+.an {
+    border: 2px solid #F0EDCF;
+    border-radius: 6px;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.an:hover {
+    background: #5ae4a8;
+    color: black;
+    transition: 1000ms ease;
+}
+
+
+
