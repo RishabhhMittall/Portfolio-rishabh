@@ -48,7 +48,7 @@ const HeroSection = () => {
                 />
               </Span>
             </TextLoop>
-            <SubTitle>{Bio.description}</SubTitle>
+            <SubTitle style={{ color: '#778899'}}>{Bio.description}</SubTitle>
             <ResumeButton onClick={openResumeInNewTab}>Resume</ResumeButton>
           </HeroLeftContainer>
 
