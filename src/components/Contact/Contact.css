@@ -48,6 +48,32 @@ h2 {
   margin: 30px 0;
 }
 
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%;
+    height: auto; /* Adjust height to be auto for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .input-box {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    width: 100%;
+    height: auto; /* Adjust height to be auto for very small screens */
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+
+  .input-box {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
 .input-box .input-line {
   position: absolute;
   bottom: -2px;

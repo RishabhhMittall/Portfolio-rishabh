@@ -7,6 +7,15 @@ import cobra from '../images/cobra logo.png';
 import balLogo from '../images/BalBharatiLogo.jpeg';
 import ipLogo from '../images/IpschoolLogo.png';
 import vitLogo from '../images/vitLogo.png';
+import gitImage from '../images/gitLogo.png';
+import photoshopImage from '../images/photoshopLogo.png';
+import figmaImage from '../images/figma logo.png';
+import postmanImage from '../images/postman Logo.png';
+import cobraCard from '../images/cobraCard.png';
+import spotifyClone from '../images/spotifyCloneImage.png';
+import TodoImage from '../images/Todo List.png';
+import snakeImage from '../images/snakeImage.jpeg';
+import netflixClone from '../images/NetflixClone.png';
 
 export const Bio = {
   name: "Rishabh Mittal",
@@ -132,8 +141,7 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+        image: gitImage,
       },
       {
         name: "GitHub",
@@ -149,18 +157,15 @@ export const skills = [
       },
       {
         name: "Postman",
-        image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+        image: postmanImage,
       },
       {
-        name: "Adobe XD",
-        image:
-          "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
+        name: "Adobe PhotoShop",
+        image: photoshopImage,
       },
       {
         name: "Figma",
-        image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+        image: figmaImage,
       },
     ],
   },
@@ -297,8 +302,7 @@ export const projects = [
     date: "Jan 2024 - Apr 2024",
     description:
       "Designed and developed the entire front end of a coding website specifically tailored for colleges.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+    image: cobraCard,
     tags: ["React js",
       "Figma",
       "HTML",
@@ -319,8 +323,7 @@ export const projects = [
     date: "Apr 24 - Present",
     description:
       "Developed a Spotify clone with full functionality, featuring user authentication, playlists, and music streaming.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    image: spotifyClone,
     tags: [
       "React Js",
       "FirBase",
@@ -340,8 +343,7 @@ export const projects = [
     date: "Nov 2023 - Dec - 2023",
     description:
       "Created a fully functional to-do list web app with task management, deadlines, and user-friendly interface.",
-    image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+    image: TodoImage,
     tags: ["HTML", "CSS", "JavaScript"],
     category: "web app",
     github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
@@ -353,8 +355,7 @@ export const projects = [
     date: "Dec 2023 - Jan -24",
     description:
       "Developed a classic Snake game with smooth controls, increasing difficulty, and a high-score tracking feature.",
-    image:
-      "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
+    image: snakeImage,
     tags: ["JavaScript", "HTML", "CSS"],
     category: "web app",
     github: "https://github.com/rishavchanda/Buckoid-Android-App",
@@ -366,8 +367,7 @@ export const projects = [
     date: "OCt 2023 - Dec 2023",
     description:
       "Built a Netflix clone featuring user authentication, content streaming, and personalized recommendations.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+    image: netflixClone,
     tags: ["HTML", "CSS", "JavaScript","Api"],
     category: "clone",
     github: "https://github.com/rishavchanda/Job-finder-App",

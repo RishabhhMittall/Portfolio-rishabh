@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled ,{ keyframes }from "styled-components";
 import _default from "../../themes/default";
+
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -92,15 +93,28 @@ export const HeroRightContainer = styled.div`
   }
 `;
 
+const waterWave = keyframes`
+  0% {
+    border-radius: 50% 40% 30% 50%/50% 40% 50% 40%;
+  }
+  50% {
+    border-radius: 40% 50% 50% 40%/40% 50% 40% 50%;
+  }
+  100% {
+    border-radius: 50% 40% 30% 50%/50% 40% 50% 40%;
+  }
+`;
+
+
 export const Img = styled.img`
   position: relative;
   width: 100%;
   height: 100%;
   max-width: 400px;
   max-height: 400px;
-  border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  // border-radius: 50%;  
   object-fit: cover;
+  animation: ${waterWave} 5s ease-in-out infinite;
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -112,7 +126,6 @@ export const Img = styled.img`
     max-height: 280px;
   }
 `;
-
 export const Title = styled.div`
   font-weight: 700;
   font-size: 50px;
