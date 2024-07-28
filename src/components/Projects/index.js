@@ -27,7 +27,7 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
           }
           <Divider />
-          {toggle === 'android app' ?
+          {toggle === 'clone' ?
             <ToggleButton active value="clone" onClick={() => setToggle('clone')}>CLONE'S</ToggleButton>
             :
             <ToggleButton value="clone" onClick={() => setToggle('clone')}>CLONE'S</ToggleButton>
