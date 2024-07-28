@@ -13,7 +13,7 @@ const Svg = styled.svg`
   height: 100%;
 `;
 
-const BUBBLE_COUNT = 250;
+const BUBBLE_COUNT = 400;
 const ATTRACTION_DISTANCE = 150;
 const MAX_SPEED = 2;
 const DRIFT_FACTOR = 0.95;

@@ -33,9 +33,10 @@ const HeroSection = () => {
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>
-              Hi, I am <br /> <span style={{ color: '#D100FF' }}>Rishabh</span>&nbsp;Mittal
+              Hey,  <span style={{ color: '#D100FF' }}>I</span> am <br /> <span style={{ color: '#D100FF' }}>Rishabh</span> Mittal
             </Title>
             <TextLoop>
+           
               I am a
               <Span style={{ color: '#D100FF' }}>
                 <Typewriter
