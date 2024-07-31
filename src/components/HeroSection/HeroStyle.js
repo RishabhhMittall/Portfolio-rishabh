@@ -94,6 +94,7 @@ export const HeroRightContainer = styled.div`
 `;
 
 const waterWave = keyframes`
+
   0% {
     border-radius: 50% 40% 30% 50%/50% 40% 50% 40%;
   }
@@ -114,6 +115,7 @@ export const Img = styled.img`
   max-height: 400px;
   // border-radius: 50%;  
   object-fit: cover;
+  border:4px solid rgba(255,255,255,0.5);
   animation: ${waterWave} 5s ease-in-out infinite;
 
   @media (max-width: 768px) {
