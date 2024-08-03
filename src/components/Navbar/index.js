@@ -30,7 +30,7 @@ return (
         <NavLink href='#education'>Education</NavLink>
       </NavItems>
       <ButtonContainer>
-        <GitHubButton href={Bio.github} target="_blank" style={{ color: '#D100FF' }}>Github Profile</GitHubButton>
+        <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
       </ButtonContainer>
       {
         isOpen &&
