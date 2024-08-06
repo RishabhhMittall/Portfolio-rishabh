@@ -314,8 +314,6 @@ export const projects = [
       "Framer Motion",
       "Tailwind CSS",],
     category: "web app",
-    github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
   },
   {
     id: 1,
@@ -334,8 +332,6 @@ export const projects = [
       "Material UI",
     ],
     category: "clone",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
   },
   {
     id: 2,
@@ -346,8 +342,7 @@ export const projects = [
     image: TodoImage,
     tags: ["HTML", "CSS", "JavaScript"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
+
   },
   {
     id: 3,
@@ -358,8 +353,7 @@ export const projects = [
     image: snakeImage,
     tags: ["JavaScript", "HTML", "CSS"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Buckoid-Android-App",
-    webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+
   },
   {
     id: 4,
@@ -370,8 +364,6 @@ export const projects = [
     image: netflixClone,
     tags: ["HTML", "CSS", "JavaScript","Api"],
     category: "clone",
-    github: "https://github.com/rishavchanda/Job-finder-App",
-    webapp: "https://github.com/rishavchanda/Job-finder-App",
   },
 ];
 

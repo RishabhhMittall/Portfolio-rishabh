@@ -1,26 +1,65 @@
-import React from "react";
 import "./Contact.css";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+
+  const form = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_qbpg29g', 'template_y44352t', form.current, {
+        publicKey: 'M5WXQJ_DFiUN-Ql2M',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setIsSubmitted(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+
+
   return (
     <div className="contactme-main">
       {/* <div class="login-light"></div> */}
       <div className="login-box">
-        <form action="#">
+
+      {isSubmitted ? (
+        <div className="submission-message">
+          Thank you! Your message has been sent successfully.<br/>
+          Please refresh to send another message.
+        </div>
+      ) : (
+        <form ref={form} onSubmit={sendEmail}>
           {/* Set the defaultChecked property to true */}
-          <input type="checkbox" className="input-check" id="input-check" defaultChecked />
+          <input
+            type="checkbox"
+            className="input-check"
+            id="input-check"
+            defaultChecked
+          />
           <label htmlFor="input-check" className="toggle">
             <span className="text off">off</span>
             <span className="text on">on</span>
           </label>
           <div className="light"></div>
 
-          <h2>Contact Details</h2>
+          <h2>Connect with me</h2>
           <div className="input-box">
             <span className="icon">
               <ion-icon name="lock-closed"></ion-icon>
             </span>
-            <input type="text" required />
+            <input type="text" name="from_name" required />
             <label>Name</label>
             <div className="input-line"></div>
           </div>
@@ -28,7 +67,7 @@ const Contact = () => {
             <span className="icon">
               <ion-icon name="mail"></ion-icon>
             </span>
-            <input type="text" required />
+            <input type="email" name="email_id" required />
             <label>Email</label>
             <div className="input-line"></div>
           </div>
@@ -36,7 +75,7 @@ const Contact = () => {
             <span className="icon">
               <ion-icon name="lock-closed"></ion-icon>
             </span>
-            <input type="text" required />
+            <input type="text" name="message" required />
             <label>Subject</label>
             <div className="input-line"></div>
           </div>
@@ -45,6 +84,7 @@ const Contact = () => {
             Send
           </button>
         </form>
+      )}
       </div>
 
       {/* <div>

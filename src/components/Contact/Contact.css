@@ -363,3 +363,10 @@ svg {
   height: 24px;
   fill: #fff;
 }
+
+
+.submission-message {
+  color: white;
+  /* background-color: #D100FF; */
+}
+
